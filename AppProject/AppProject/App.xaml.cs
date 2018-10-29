@@ -11,7 +11,7 @@ namespace AppProject
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new SplashScreen();
         }
 
         protected override void OnStart()
