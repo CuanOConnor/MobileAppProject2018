@@ -4,8 +4,7 @@
              x:Class="AppProject.SplashScreen">
 
     <StackLayout>
-        <Image x:Name="imageMain" Aspect="AspectFit" >
+        
           
-        </Image>
     </StackLayout>
 </ContentPage>

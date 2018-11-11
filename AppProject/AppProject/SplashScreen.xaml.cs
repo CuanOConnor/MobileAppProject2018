@@ -15,17 +15,7 @@ namespace AppProject
 		public SplashScreen ()
 		{
 			InitializeComponent ();
-            SetupImagesOnPage();
 		}
-
-        private void SetupImagesOnPage()
-        {
-            var assembly = typeof(SplashScreen);
-
-            string strFileName = "AppProject.Assets.Images.SplashIcon.png";
-
-            imageMain.Source = ImageSource.FromResource(strFileName, assembly);
-        }
 
 	}
 }
