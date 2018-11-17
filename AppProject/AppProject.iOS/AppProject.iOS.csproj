@@ -160,4 +160,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\SplashIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Calculator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Flashlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Stopwatch.png" />
+  </ItemGroup>
 </Project>

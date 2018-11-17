@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppProject.HomePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="AppProject.HomePage"
+             Padding="5,10,5,10"
+             BackgroundColor="#4a576b"
+             NavigationPage.HasNavigationBar="false">
+    <Grid>
+        <Button Image="Calculator.png" BorderRadius="30" Grid.Row="0" Grid.Column="0" BackgroundColor="#5b687c" Clicked="Calculator_Clicked"/>
+        <Button Image="Notepad.png" BorderRadius="30" Grid.Row="0" Grid.Column="1" BackgroundColor="#5b687c" Clicked="Notepad_Clicked" />
+        <Button Image="Flashlight.png" BorderRadius="30" Grid.Row="1" Grid.Column="0" BackgroundColor="#5b687c" Clicked="Flashlight_Clicked"/>
+        <Button Image="Stopwatch.png" BorderRadius="30" Grid.Row="1" Grid.Column="1" BackgroundColor="#5b687c" Clicked="Stopwatch_Clicked"/>
+    </Grid>
 </ContentPage>

@@ -16,5 +16,25 @@ namespace AppProject
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private void Calculator_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Notepad_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Flashlight_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Stopwatch_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
