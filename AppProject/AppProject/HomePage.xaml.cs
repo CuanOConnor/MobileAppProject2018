@@ -15,11 +15,13 @@ namespace AppProject
 		public HomePage ()
 		{
 			InitializeComponent ();
-		}
+        }
 
-        private void Calculator_Clicked(object sender, EventArgs e)
+         // Navigation events for HomePage buttons
+
+        async void Calculator_Clicked(object sender, EventArgs e)
         {
-
+           await Navigation.PushAsync(new CalculatorPage());
         }
 
         private void Notepad_Clicked(object sender, EventArgs e)

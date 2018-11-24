@@ -11,6 +11,8 @@ namespace AppProject
         {
             InitializeComponent();
 
+            // starting from splash screen and navigating from there
+
             MainPage = new NavigationPage(new SplashScreen());
         }
 

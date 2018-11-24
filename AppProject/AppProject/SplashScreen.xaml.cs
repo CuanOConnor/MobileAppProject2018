@@ -20,6 +20,8 @@ namespace AppProject
 
             NavigationPage.SetHasNavigationBar(this, false);
 
+            // defining splash screen image and dimensions
+
             var sub = new AbsoluteLayout();
 
             splashImage = new Image
@@ -29,6 +31,8 @@ namespace AppProject
                 HeightRequest = 100
             };
 
+            // setting layout properties/type
+
             AbsoluteLayout.SetLayoutFlags(splashImage, AbsoluteLayoutFlags.PositionProportional);
             AbsoluteLayout.SetLayoutBounds(splashImage, new Rectangle(0.5, 0.5, AbsoluteLayout.AutoSize, AbsoluteLayout.AutoSize));
 
@@ -37,6 +41,8 @@ namespace AppProject
             this.BackgroundColor = Color.FromHex("#4a576b");
             this.Content = sub;
         }
+
+        // action method for auto navigation away from splash 
 
         protected override async void OnAppearing()
         {

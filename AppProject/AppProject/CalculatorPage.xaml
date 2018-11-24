@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProject.CalculatorPage"
+             BackgroundColor="#4a576b"
+             NavigationPage.HasNavigationBar="false">
+    
+    <!-- Setting the definitions for the grid-->
+    
+     <Grid Padding="5,0" RowSpacing="5" ColumnSpacing="5" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        
+         <!--Creating a label to display output-->
+         
+        <Label x:Name="outputBox" FontSize="48" FontAttributes="Bold" BackgroundColor="#5b687c" Text="0"
+              TextColor="White" HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+              LineBreakMode="NoWrap" Grid.ColumnSpan="4" />
+
+        <!--Detailed Operators here-->
+         
+        <Button Text="C" Grid.Row="1" Grid.Column="0" Style="{StaticResource calcButton}" BackgroundColor="#32373f" Clicked="Clear_Clicked" />
+        <Button Text="√" Grid.Row="1" Grid.Column="1" Style="{StaticResource calcButton}" BackgroundColor="#32373f"  FontSize="36" Clicked="SquareRoot_Clicked"/>
+        <Button Text="%" Grid.Row="1" Grid.Column="2" Style="{StaticResource calcButton}"  BackgroundColor="#32373f" Clicked="Percent_Clicked"/>
+
+        <!--Number selectors here-->
+
+        <Button Text="7" Grid.Row="2" Grid.Column="0"  BackgroundColor="#5b687c" Clicked="OnSelectNumber" Style="{StaticResource calcButton}"/>
+        <Button Text="8" Grid.Row="2" Grid.Column="1" BackgroundColor="#5b687c"  Clicked="OnSelectNumber" Style="{StaticResource calcButton}" />
+        <Button Text="9" Grid.Row="2" Grid.Column="2" BackgroundColor="#5b687c"  Clicked="OnSelectNumber" Style="{StaticResource calcButton}" />
+
+        <Button Text="4" Grid.Row="3" Grid.Column="0"  BackgroundColor="#5b687c" Clicked="OnSelectNumber" Style="{StaticResource calcButton}"/>
+
+        <Button Text="5" Grid.Row="3" Grid.Column="1" BackgroundColor="#5b687c" Clicked="OnSelectNumber" Style="{StaticResource calcButton}" />
+        <Button Text="6" Grid.Row="3" Grid.Column="2"  BackgroundColor="#5b687c"  Clicked="OnSelectNumber" Style="{StaticResource calcButton}" />
+
+        <Button Text="1" Grid.Row="4" Grid.Column="0"  BackgroundColor="#5b687c" Clicked="OnSelectNumber" Style="{StaticResource calcButton}"/>
+        <Button Text="2" Grid.Row="4" Grid.Column="1"  BackgroundColor="#5b687c" Clicked="OnSelectNumber" Style="{StaticResource calcButton}"/>
+        <Button Text="3" Grid.Row="4" Grid.Column="2"  BackgroundColor="#5b687c"  Clicked="OnSelectNumber" Style="{StaticResource calcButton}" />
+        <Button Text="0" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"  BackgroundColor="#5b687c"  Clicked="OnSelectNumber" Style="{StaticResource calcButton}"/>
+
+        <!--Mathematical Operators here-->
+
+        <Button Text="x2" Grid.Row="5" Grid.Column="2" BackgroundColor="#5b687c"  Clicked="Squared_Clicked" Style="{StaticResource calcButton}" />
+
+        <Button Text="=" Grid.Row="5" Grid.Column="3"  BackgroundColor="#7f8da3"  Clicked="Equals_Clicked"  Style="{StaticResource calcButton}"/>
+
+        <Button Text="÷" Grid.Row="1" Grid.Column="3" BackgroundColor="#7f8da3"  Clicked="OnSelectOperator" Style="{StaticResource calcButton}"/>
+        <Button Text="*" Grid.Row="2" Grid.Column="3" BackgroundColor="#7f8da3"  Clicked="OnSelectOperator" Style="{StaticResource calcButton}" />
+        <Button Text="-" Grid.Row="3" Grid.Column="3" BackgroundColor="#7f8da3" Clicked="OnSelectOperator" Style="{StaticResource calcButton}" />
+        <Button Text="+" Grid.Row="4" Grid.Column="3" BackgroundColor="#7f8da3"  Clicked="OnSelectOperator" Style="{StaticResource calcButton}" />
+    </Grid>
+</ContentPage>
