@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProject.FlashlightPage"
+             BackgroundColor="#4a576b"
+             NavigationPage.HasNavigationBar="false">
+   
+    <!--Buttons for turning on and off flashlight-->
+     <StackLayout VerticalOptions="Center"
+                  HorizontalOptions="Center">
+        <Button x:Name="OnButton" Image="On.png" BackgroundColor="#83c68a" Clicked="OnButton_Clicked" Style="{StaticResource flashButton}"/>
+        <Button x:Name="OffButton" Image="Off.png" BackgroundColor="#c68383" Clicked="OffButton_Clicked" Style="{StaticResource flashButton}"/>
+    </StackLayout>  
+    
+</ContentPage>

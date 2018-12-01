@@ -4,11 +4,18 @@
              x:Class="AppProject.App">
     <Application.Resources>
         <ResourceDictionary>
+            <!--Style for calculator buttons-->
             <Style x:Key="calcButton" TargetType="Button">
                 <Setter Property="WidthRequest" Value="60"/>
                 <Setter Property="HeightRequest" Value="60"/>
                 <Setter Property="TextColor" Value="White"/>
                 <Setter Property="FontSize" Value="30"/>
+            </Style>
+            <!--Style for flashlight buttons-->
+            <Style x:Key="flashButton" TargetType="Button">
+                <Setter Property="WidthRequest" Value="150"/>
+                <Setter Property="HeightRequest" Value="150"/>
+                <Setter Property="BorderRadius" Value="20"/>
             </Style>
         </ResourceDictionary>
 

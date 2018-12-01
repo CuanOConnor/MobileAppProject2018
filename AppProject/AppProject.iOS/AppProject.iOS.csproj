@@ -148,6 +148,9 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="kphillpotts.Lamp.Plugin">
+      <Version>1.0.0.1</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="3.3.0.967583" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
@@ -171,5 +174,11 @@
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Stopwatch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\On.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\Off.png" />
   </ItemGroup>
 </Project>
