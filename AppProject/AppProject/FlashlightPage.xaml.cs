@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Lamp.Plugin;
+using Lamp.Plugin; // downloaded plugin for functionality
 
 namespace AppProject
 {

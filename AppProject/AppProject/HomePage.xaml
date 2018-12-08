@@ -9,8 +9,8 @@
     <!--Buttons for HomePage -->
     <Grid>
         <Button Image="Calculator.png" BorderRadius="30" Grid.Row="0" Grid.Column="0" BackgroundColor="#5b687c" Clicked="Calculator_Clicked"/>
-        <Button Image="Notepad.png" BorderRadius="30" Grid.Row="0" Grid.Column="1" BackgroundColor="#5b687c" Clicked="Notepad_Clicked" />
-        <Button Image="Flashlight.png" BorderRadius="30" Grid.Row="1" Grid.ColumnSpan="2" BackgroundColor="#5b687c" Clicked="Flashlight_Clicked"/>
-       <!-- <Button Image="Stopwatch.png" BorderRadius="30" Grid.Row="1" Grid.Column="1" BackgroundColor="#5b687c" Clicked="Stopwatch_Clicked"/> -->
+        <Button Image="Flashlight.png" BorderRadius="30" Grid.Row="0" Grid.Column="1" BackgroundColor="#5b687c" Clicked="Flashlight_Clicked"/>
+        <Button Image="Stopwatch.png" BorderRadius="30" Grid.Row="1" Grid.ColumnSpan="2"  BackgroundColor="#5b687c" Clicked="Stopwatch_Clicked"/>
+         <!--<Button Image="Notepad.png" BorderRadius="30" Grid.Row="1" Grid.Column="1" BackgroundColor="#5b687c" Clicked="Notepad_Clicked" />-->
     </Grid>
 </ContentPage>

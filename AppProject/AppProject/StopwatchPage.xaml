@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppProject.StopwatchPage"
+             BackgroundColor="#4a576b"
+             NavigationPage.HasNavigationBar="false">
+    
+    <StackLayout>
+        <!--Label that serves as display for timers count-->
+        <Label Text="0:00:00" 
+               x:Name="timerText" 
+               FontSize="40"
+               TextColor="White"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"/>
+        
+        <!--Functional buttons for page-->
+        <Button Text="Start" x:Name="btnStart" Clicked="btnStart_Clicked" Style="{StaticResource timerButton}"/>
+        <Button Text="Pause" x:Name="btnPause" Clicked="btnPause_Clicked" Style="{StaticResource timerButton}"/>
+        <Button Text="Reset" x:Name="btnReset" Clicked="btnReset_Clicked" Style="{StaticResource timerButton}"/>
+    </StackLayout>
+
+</ContentPage>

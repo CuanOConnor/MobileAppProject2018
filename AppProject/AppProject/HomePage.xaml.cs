@@ -34,9 +34,9 @@ namespace AppProject
             await Navigation.PushAsync(new FlashlightPage());
         }
 
-        private void Stopwatch_Clicked(object sender, EventArgs e)
+        async void Stopwatch_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new StopwatchPage());
         }
     }
 }
