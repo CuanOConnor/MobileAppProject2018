@@ -24,11 +24,6 @@ namespace AppProject
            await Navigation.PushAsync(new CalculatorPage());
         }
 
-        private void Notepad_Clicked(object sender, EventArgs e)
-        {
-
-        }
-
         async void Flashlight_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new FlashlightPage());
